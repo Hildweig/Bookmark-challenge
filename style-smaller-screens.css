@@ -1,0 +1,545 @@
+@media (max-width: 1200px) { 
+
+    /*---- Header ----*/
+    .navigation-list {
+        margin-right: 50px;
+    }
+    /*---- About ---*/
+
+    .about::before{
+       
+        bottom: 8%;
+        right: 0%;
+        width: 39%;
+        height: 43%;   
+    }
+
+   .about .container .col-1 {
+    width: 45%;
+    margin-bottom: 10px;
+    }
+
+    .about .col-2 img {
+    width: 100%;
+    }
+
+    .about h1 {
+        font-size: 2.2rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+
+    /*--- Section header general styling ---*/
+    .section-header {
+        width: 50%;
+        margin: 0 auto 2rem;
+    }
+    
+    .section-header-title {
+        font-size: 1.65rem;
+    }
+
+    /*---- Questions ----*/
+    .questions {
+        width: 60%;
+    }
+
+}
+
+/* Medium Devices */
+
+@media (max-width: 992px) {
+
+    /*---- Header ----*/
+    .navigation-list {
+        margin-right: 0px;
+    }
+
+    /*---- About ---*/
+    .about::before {
+        bottom: 30%;
+        width: 68%;
+        height: 40%;
+    }
+
+    
+  /*---- About columns ----*/
+  
+    .about .container {
+        height: auto;
+        padding: 2rem 0;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about .container .col-1 {
+        width: 100%;
+        margin-top: 5rem;
+        text-align: center;
+    }
+    
+    .about .container .col-2 {
+        width: 100%;
+        display: block;
+    }
+
+    /*---- About columns content ---*/
+    .about .container h1 {
+        font-size: 1.8rem;
+    }
+
+    .about .col-1 p {
+        margin: 1.7rem 2rem;
+    }
+    .about .col-2 img {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+     /*--- Section header general styling ---*/
+     .section-header {
+        width: 70%;
+        margin: 0 auto 2rem;
+    }
+
+    /*---- Features tabs ----*/
+    .features-list {
+        width: 70%;
+    }
+
+    .tab .col-1::before {
+        width: 40%;
+        height: 35%;   
+        bottom: 5%;
+    }
+
+    /*---- Questions ----*/
+    .questions {
+        width: 70%;
+    }
+    /*---- Contact Section ----*/
+
+    .contact-container {
+        width: 80%;
+    }
+
+    .contact-form {
+        width: 60%;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+
+/*---- Navigation ----*/
+
+ /*---- About ---*/
+.about::before {
+    width: 68%;
+    height: 35%;
+    bottom: 37%;
+}
+
+
+header img{
+    position: relative;
+    z-index: 999;
+}  
+
+nav {
+    position: relative;
+}
+
+#logo-1.hide {
+    display: none;
+}
+
+#logo-2.show {
+    display: block;
+}
+
+.fixed {
+    position: fixed;
+}
+/*---- Menu icon ----*/
+
+.navigation-menu-icon,
+.navigation-close-icon{
+    top: 7.5%;
+    right: 5%;
+
+    transform: translate(-5%,-7.5%);
+    z-index: 999;
+    cursor: pointer;
+}
+.navigation-menu-icon {
+    display: block;
+}
+.navigation-menu-icon.hide{
+    display: none;
+}
+
+.navigation-close-icon.show{
+    display: block;
+}
+
+
+.navigation-list {
+    position: fixed;
+    margin: 0 auto;
+    background-color: rgba(37,43,70,0.9);
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding-top: 7rem;
+    align-items: center;
+    justify-content: start;
+
+    opacity: 0;
+    pointer-events: none;
+    z-index: 900;
+}
+
+.navigation-list.show {
+    opacity: 1;
+    transition: opacity ease 500ms;
+    pointer-events: all;
+}
+.navigation-list li {
+    width: 90%;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(203, 205, 212, 0.6);
+}
+
+.navigation-list .social-media {
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+}
+
+.navigation-link{
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #fff;
+    width: 100%;
+    display: block
+
+}
+
+.navigation-btn {
+    display: block;
+   
+    color: #fff;
+    background-color: transparent;
+
+    padding: 0.5rem 0;
+    margin: 0;
+
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-shadow: none;
+}
+/*---- Features tabs ----*/
+.features-list {
+    flex-direction: column;
+}
+
+.line {
+    display: none;
+}
+
+.features-list li {
+    width: 100%;
+}
+
+.features-list li.active {
+    border-bottom: 3.5px solid hsl(0, 94%, 66%);
+}
+
+/*---- Tabs ----*/
+
+.tab {
+    flex-direction: column;
+    justify-content: center;
+}
+.tab div {
+    height: auto;
+}
+
+.tab .col-1::before {
+    bottom: 25%;
+    width: 70%;
+    height: 30%;   
+}
+ 
+.tab .col-1 {
+    width: 100%;
+}
+.tab img {
+    margin: 0 auto;
+    display: block;
+}
+
+.tab .col-2 {
+    width: 100%;
+    margin-top: 5rem;
+    padding: 0 3rem;
+    text-align: center;
+}
+
+.info.btn-blue {
+    margin: 1.5rem auto;
+}
+
+/*---- Cards ----*/
+.extension-card-container {
+    width: 90%;
+}
+
+/*---- Contact -----*/
+
+/*---- Contact Section ----*/
+.contact {
+    width: 100%;
+    height: auto;
+    background-color: var(--soft-blue);
+    padding: 4rem 0;
+}
+
+.contact-container {
+    width: 70%;
+    height: auto;
+
+    margin: 0 auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h2 {
+    color: #fff;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.contact h1 {
+    width: 80%;
+}
+
+.contact-form {
+    
+    width: 80%;
+    height: 140px;
+    flex-direction: column;
+
+}
+
+.email-container {
+    width: 100%;
+    height: 37%;
+}
+
+.contact-form input[type=submit] {
+    width: 100%;
+    height: 37%;
+
+}
+
+/*---- Footer ----*/
+footer {
+    background-color: var(--very-dark-blue);
+    padding: 2rem 0;
+}
+
+.footer-container {
+    flex-direction: column;
+
+}
+.footer-logo-nav-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.footer-navigation {
+    margin: 0rem;
+    flex-direction: column;
+}
+.footer-navigation li  {
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+.footer-navigation .navigation-link {
+    margin: 0;
+} 
+
+footer #logo {
+  padding: 1rem 1.5rem 1rem 0;
+}
+
+}
+/*---- Small screen ----*/
+
+@media (max-width: 576px) {
+
+    /*---- About ---*/
+.about::before {
+    width: 68%;
+    height: 35%;
+    bottom: 37%;
+}
+    
+.about .container h1 {
+    font-size: 1.8rem;
+}
+
+.about .container p,
+.section-paragraph,
+.questions p,
+#contact-email
+{
+    font-size: 0.9rem;
+}
+
+.section-header-title {
+    font-size: 1.5rem;
+}
+
+.arrow {
+    margin: 0;
+}
+
+/*---- Features Tabs ----*/
+.tab .col-1::before {
+    height: 25%; 
+    bottom: 27%;  
+}
+
+/*---- Cards ----*/
+.extension-card-container {
+    flex-direction: column;
+}
+.extension-card {
+    margin: 0 auto;
+    width: 80%;
+}
+
+/*---- Questions ----*/
+.questions {
+    width: 78%;
+}
+
+/*---- Contact ----*/
+
+
+.contact h2 {
+  font-size: 0.65rem;
+   
+}
+
+.contact h1 {
+  font-size: 1.5rem;
+
+}
+
+}
+
+/*---- Very small screens ----*/
+@media (max-width: 500px) {
+
+/*---- About ---*/
+
+.about .container h1 {
+    font-size: 1.5rem;
+}
+
+.about .container .col-1 {
+    margin-top: 3rem; 
+}
+
+/*---- Features ----*/
+.tab .col-1::before {
+    bottom: 27%;
+    width: 70%;
+    height: 23%;   
+}
+
+
+}
+
+@media (max-width: 450px) {
+    
+    .about::before {
+        bottom: 45%;
+        height: 27%;
+    }
+    
+    .about .container h1 {
+        font-size: 1.12rem;
+    }
+    
+    .about .container p, .section-paragraph, .questions p {
+        font-size: 0.8rem;
+    }
+    
+    .section-header-title {
+        font-size: 1.1rem;
+    }
+
+    /*---- Contact ----*/
+    .contact-container {
+        width: 90%;
+    }
+    
+    .contact-form {
+        width: 90%;
+    }
+
+    .contact h2 {
+        font-size: 0.5rem;
+        
+    }
+  
+    .contact h1 {
+    font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 390px) {
+
+    
+    .about::before {
+        bottom: 50%;
+        height: 23%;
+    }
+
+    .about .btn-blue {
+        margin: 0 0 0.8rem;
+    }
+
+
+}
+
+@media (max-width: 367px) {
+    .tab .col-1::before {
+        bottom: 33%;
+        height: 17%;   
+    }
+}
